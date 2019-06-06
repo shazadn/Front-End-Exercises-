@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    Shazad
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="intro-style.css">
+
+
+
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+    <div id="content">
+        <marquee class="display-4">
+            hello my name is Shazad
+        </marquee>
+    </div>
+    <div id="extra">
+        <p> Non culpa nisi aliqua cupidatat consectetur nostrud reprehenderit culpa. Et proident adipisicing adipisicing consequat
+            Lorem cupidatat anim eu nostrud. Id consectetur Lorem veniam labore duis laborum ad cillum laborum excepteur
+            magna. Tempor laboris aute nisi ut commodo labore aliqua. Esse ipsum eiusmod esse nostrud est dolore. Occaecat
+            exercitation nisi laboris tempor veniam laborum magna deserunt elit dolore. Officia proident adipisicing nisi
+            minim esse fugiat amet quis laboris ad minim consequat ea. Enim velit aliqua deserunt qui. Anim laboris fugiat
+            ad non elit velit voluptate do cillum labore eiusmod cillum Lorem est. Proident deserunt Lorem dolor irure commodo
+            irure veniam irure amet est do aliquip. Eiusmod sunt consectetur irure ipsum id laboris cillum ex exercitation
+            veniam quis non sit. Exercitation officia laborum velit laborum aliqua nisi cillum ut id. Aliqua culpa ea veniam
+            fugiat qui sint enim ut. Ipsum ea anim et mollit quis cillum commodo enim aute. Ex ad quis sint excepteur voluptate
+            quis magna tempor labore nulla pariatur. Ipsum id nostrud labore nostrud ut voluptate laborum. </p>
+    </div>
+    <div id="home" p class="hello"> hello </p>
+    </div>
+    <a href="https://google.com" class="btn btn-light">Light</a>
+    </div>
+    <script src="index.js"></script>
+    <button onclick="doSomething()" class="btn btn-dark" >Do Something </button>
+
+    <form>
+        Value 1:<br>
+        <input id="val1" type="number" name="Value1"></br>
+        Value 2:<br>
+        <input id="val2" type="number" name="Value2"></br>
+    </form>
+    <button id="multiplyBtn" onclick="doMultiply()" class="btn btn-primary" >Multiply</button>
+    
+    <div id="results" >
+    <p>Result: <span id="result"></span></p>
+    </div>
+
+ <script> 
+function doMultiply(){
+   const val1 = document.getElementById("val1").value;
+   const val2 = document.getElementById("val2").value;
+   let calc = val1 * val2;
+  //document.getElementById("results");
+ let list = document.createElement("p");
+ list.innerText = calc;
+  document.getElementById("results").appendChild(list);
+   console.log(calc);
+}
+</script> 
+
+
+    
+
+</body>
+</html>
